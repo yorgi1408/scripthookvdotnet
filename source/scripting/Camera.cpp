@@ -148,7 +148,7 @@ namespace GTA
 	}
 	void GameplayCamera::RelativePitch::set(float relativePitch)
 	{
-		Native::Function::Call(Native::Hash::SET_GAMEPLAY_CAM_RELATIVE_PITCH, relativePitch);
+		Native::Function::Call(Native::Hash::SET_GAMEPLAY_CAM_RELATIVE_PITCH, relativePitch, 1.0f);
 	}
 	Math::Vector3 Camera::Rotation::get()
 	{
